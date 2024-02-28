@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block start %}
+    <main>
+    <center>
+        <h4 style="color:black">{{movie.name}}</h4>
+        <img style="height:250px;" src="/media/{{movie.image}}" alt="Movie Title"> 
+    </center>
+    {% if not review %}
+        <center><p>No reviews Yet</p></center>
+    {% else %}
+    {% for re in review %}
+    <section class="movie-review">
+        <div class="review-content"> 
+            <p>Review: <span class="release-date">{{re.mreview}}</span></p>
+            <p>Rating: <span class="rating">{{re.rating}}</span></p>
+        </div>
+    </section>
+    {% endfor %}
+    {% endif %}
+    </main>
+
+
+{% endblock %}
