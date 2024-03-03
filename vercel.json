@@ -21,10 +21,6 @@
         {
             "src": "/(.*)",
             "dest": "myview/wsgi.py"
-        },
-        {
-            "src": "about/",
-            "dest": "about/"
         }
         
     ]
