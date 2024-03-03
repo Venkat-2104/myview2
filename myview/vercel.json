@@ -23,8 +23,8 @@
             "dest": "myview/wsgi.py"
         },
         {
-            "src": "/",
-            "dest": "/"
+            "src": "about/",
+            "dest": "about/"
         }
         
     ]
