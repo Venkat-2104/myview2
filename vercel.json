@@ -1,7 +1,7 @@
 {
     "version":2,
     "builds": [{
-        "src": "myview2/wsgi.py",
+        "src": "/myview/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     },
@@ -20,7 +20,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "myview2/wsgi.py"
+            "dest": "/myview/wsgi.py"
         }
         
     ]
