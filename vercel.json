@@ -23,5 +23,11 @@
             "dest": "myview/wsgi.py"
         }
         
+    ],
+    "rewrites": [
+        {
+            "src":"/(.*)",
+            "dest" : "/"
+        }
     ]
 }
