@@ -1,7 +1,7 @@
 {
     "version":2,
     "builds": [{
-        "src": "myview/wsgi.py",
+        "src": "myview3/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     },
@@ -20,14 +20,8 @@
         },
         {
             "src": "/(.*)",
-            "dest": "myview/wsgi.py"
+            "dest": "myview3/wsgi.py"
         }
         
-    ],
-    "rewrites": [
-        {
-            "src":"/(.*)",
-            "dest" : "/"
-        }
     ]
 }
